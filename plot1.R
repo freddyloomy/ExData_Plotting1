@@ -1,5 +1,6 @@
 plot1<-function(){
   png("plot1.png") 
+  x<-loadPowerConData()
   hist(x$Global_active_power,main = "Global Active Power", xlab = "Global Active Power (kilowatts)",col="red")
   dev.off()
 }
